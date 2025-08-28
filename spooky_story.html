@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spooky Stories</title>
+    <style>
+        body.dark {
+            color: white;
+            background-color: black;
+        }
+
+        button {
+            display: block;
+            padding: 5px;
+        }
+
+        .textEntry {
+            margin-top: 12px;
+            margin-bottom: 15px;
+        }
+
+        #div {
+           margin: auto;
+           width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div">
+        <h1>The Basement</h1>
+        <h3 id="story">Your Friend is missing and you got to know that he is being kidnapped.</h3>
+        <button onclick="goDark()">Get In The Mood</button>
+
+        <div class="textEntry">Type your name if you dare to SAVE HIM: <input type="text" id="name"></div>
+
+        <button onclick="typeAndScream()">A message from YOUR FRIEND: PLEASE SAVE ME !!</button>
+        <button onclick="finishTheStory()">Did you SAVED HIM ??</button>
+    </div>
+
+    <script>
+        function typeAndScream() {
+            var personName = document.getElementById("name").value;
+            alert("Your Friend says: Please SAVE ME " + personName)
+        }
+
+        function goDark() {
+            document.body.className = "dark";
+        }
+
+        function finishTheStory() {
+            document.getElementById("story").innerHTML = "Yeah, I finally found him. But I will KILL you next time if you try to hurt my friend again !!"
+        }
+    </script>
+</body>
+
+</html>
