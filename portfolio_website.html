@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        nav{
+            background-color: bisque;
+            padding: 10px;
+        }
+        ul{
+            list-style-type: none;
+            margin: 2px;
+            padding: 2px;
+            overflow: hidden;
+        }
+        li{
+            float: left;
+        }
+        li a{
+            text-decoration: none;
+            margin: 5px;
+            background-color: darksalmon;
+            padding: 5px;
+        }    
+        li a:hover{
+           background-color: rgb(237, 213, 183);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul><li><a href="./portfolio_website.html">Home</a></li>
+            <li><a href="./portfolio_about.html">About</a></li>
+            <li><a href="./portfolio_contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <h2>Interesting Information</h2>
+    <img src="./2.jpg" alt="">
+    <br/>
+    <button onclick="tiger()">Read More!</button>
+    <p id="tiger-info"></p>
+    <img src="./istockphoto-1796374503-612x612.jpg" alt="">
+    <br/>
+    <button onclick="lion()">Read More!</button>
+    <p id="lion-info"></p>
+
+    <script>
+        function tiger(){
+            document.getElementById("tiger-info").innerHTML = "Tigers are the largest members of the cat family, known for their strength and iconic striped fur, and are found in various habitats across Asia. As endangered apex predators, their populations have significantly declined due to human activity, but conservation efforts in some regions, like India, have shown promise for their recovery. Key facts include their diet of large mammals, solitary nature, excellent hunting skills aided by soft paw pads."
+        }
+         function lion(){
+            document.getElementById("lion-info").innerHTML = "Lions have strong, compact bodies and powerful forelegs, teeth and jaws for pulling down and killing prey. Their coats are yellow-gold, and adult males have shaggy manes that range in color from blond to reddish-brown to black. The length and color of a lion's mane is likely determined by age, genetics and hormones."
+        }
+    </script>
+</body>
+</html>

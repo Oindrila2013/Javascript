@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changing Color Of Text</title>
+    <style>
+        #myElement{
+            border: 10px solid #0e0d0d;
+            width: 200px;
+            height: 100px;
+        }
+        body{
+            background-color: rgb(230, 199, 241);
+        }
+    </style>
+</head>
+<body>
+    <h2> ✨Please click on "Suprise" to see the change in text like magic😯✨</h2>
+    <div id="myElement">What's up?</div>
+    <br>
+    <button type="button"onclick='changeStyle()'>Suprise</button>
+    <script>
+        function changeStyle(){
+            var element = document.getElementById('myElement');
+            element.style.color = '#DC143C';
+        }
+    </script>
+</body>
+</html>
