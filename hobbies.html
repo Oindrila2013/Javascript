@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobbies</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: #eadefa;
+        }
+    </style>
+</head>
+<body>
+    <h1>MY HOBBIES</h1>
+    <img src="hobby1.jpg" alt="">
+    <br/>
+    <button onclick="singing()">Click To Learn More!</button>
+    <p id="singing-info"></p>
+    <img src="hobby2.jpg" alt="">
+    <br/>
+    <button onclick="coding()">Click To Learn More!</button>
+    <p id="coding-info"></p>
+    <script>
+        function singing(){
+            document.getElementById("singing-info").innerHTML = "Singing is the production of musical sounds using the human voice, involving the controlled use of the vocal cords, lungs, and other muscles to create melodies and rhythms. It's a universal and ancient art form used for emotional expression, communication, entertainment, and religious rituals. Singing offers health benefits, including stress reduction, mood improvement, and better language development for children."
+        }
+         function coding(){
+            document.getElementById("coding-info").innerHTML = "Coding, or computer programming, is the process of creating a set of instructions, or code, that tell computers what to do and how to perform tasks. These instructions are written in special programming languages, like Python or JavaScript, that computers can understand and execute to build software, websites, and applications for various uses, from mobile apps and games to controlling robots and managing complex data."
+        }
+    </script>
+</body>
+</html>
